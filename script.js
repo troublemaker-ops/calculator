@@ -6,9 +6,9 @@ function diaplayThe(input){
 }
 function calculate(){
     try{
-    let expression = display.value.replace(/\b0+(\d+)/g, '$1');
+    
 
-    display.value=eval(expression)}
+    display.value=eval(display.value)}
     catch(error){
         display.value="error"
     }
@@ -17,4 +17,5 @@ function calculate(){
 function clearDisplay(){
     display.value = " ";
     
+
 }
